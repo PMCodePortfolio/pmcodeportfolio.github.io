@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Cross Section Tool - PM_CODE</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="NavBarStyle.css" rel="stylesheet">
+    <script type="text/javascript" src="java.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="hamburgerDropdownDisabled" id="hamburgerID">
+          <div class="hamburgerIconHolder">
+            <a href="javascript:void(0);" class="hamburgerIcon" onclick="HamburgerDropdownToggle()">
+              <img src="MobileNavIcon.png" height="25" width="25">
+            </a>
+          </div>
+          <a href="index.html" class="selected">Home</a>
+          <div class="dropdownHolder">
+            <button class="dropdownOption">
+              Projects
+            </button>
+            <div class="subOptionHolder">
+              <a href="DOTSColourMixingSimulation.html" class="subOption">DOTS Colour Mixing Simulation</a>
+              <a href="FPSIntegrationTool.html" class="subOption">FPS Integration Tool</a>
+              <a href="AstroBumpers.html" class="subOption">AstroBumpers</a>
+              <a href="CrossSectionTool.html" class="subOption">Cross Section Tool</a>
+              <a href="CPPOpenGLDemo.html" class="subOption">C++ &amp; OpenGL Demonstration</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="videoSection">
+        <h1>Cross Section Tool</h1>
+        <div class="videoContainer">
+          <div>
+            <iframe width="1037" height="583" src="https://www.youtube.com/embed/txz1SmMuWZg" title="Cross Section Tool" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+      <section class="semiOpaqueBG">
+        <p>
+          As an individual research and development project conducted under my employment at Babcock, I produced a reusable system that allows cross sectioning to be simulated on models within Unity to create engaging and effective training media. 
+        </p>
+        <p>
+          The tool is focused around using planes that defined where the cross section would occur and on which Materials. It also allows:
+        </p>
+        <ul>
+          <li>Cross sections to be moved and rotated even during runtime</li>
+          <li>Multiple planes to be involve with cross sectioning a Material, useful for making all kinds of slicing effects</li>
+          <li>Clipping and Volumetric modes (explained below)</li>
+        </ul>
+        <p>This illustration demonstrates the different cross section types applied to the enclosed green cube:</p>
+        <div class="centreImage">
+          <img src="CSTypes.png" height="200" width="600">
+        </div>
+        <p>The cross section involves the back faces of the effected Material being exposed and the illusion that the cross sectioned surface is flat comes from only allowing a bold colour to be presented on the back faces.</p>
+        <p>Clipping describes when the cross sectioning has just removed the effected part of the target Material giving a floating appearance, which is useful for the most external object involved in the cross section.</p>
+        <p>Volumetric clips the target Material and hides its front faces which allows the surrounding object to seem that its volume is filled and the enclosed object is solidified within it.</p>
+      </section>
+    </main>
+    <footer class="semiOpaqueBG">
+      <h2>Contact</h2>
+      <div>
+        <a href="mailto:pierre.mcdougall@outlook.com?Subject=Pierre_McDougall_CODE%20Contact" class="linkButton">Email</a>
+        <a href="https://www.linkedin.com/in/pierre-mcdougall/" target="_blank" class="linkButton">LinkedIn</a>
+      </div>
+      <p class="copyright">Pierre McDougall © 2020</p>
+    </footer>
+  </body>
+</html>

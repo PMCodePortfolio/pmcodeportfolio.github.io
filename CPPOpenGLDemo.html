@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>C++ &amp; OpenGL Demonstration - PM_CODE</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="NavBarStyle.css" rel="stylesheet">
+    <script type="text/javascript" src="java.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="hamburgerDropdownDisabled" id="hamburgerID">
+          <div class="hamburgerIconHolder">
+            <a href="javascript:void(0);" class="hamburgerIcon" onclick="HamburgerDropdownToggle()">
+              <img src="MobileNavIcon.png" height="25" width="25">
+            </a>
+          </div>
+          <a href="index.html" class="selected">Home</a>
+          <div class="dropdownHolder">
+            <button class="dropdownOption">
+              Projects
+            </button>
+            <div class="subOptionHolder">
+              <a href="DOTSColourMixingSimulation.html" class="subOption">DOTS Colour Mixing Simulation</a>
+              <a href="FPSIntegrationTool.html" class="subOption">FPS Integration Tool</a>
+              <a href="AstroBumpers.html" class="subOption">AstroBumpers</a>
+              <a href="CrossSectionTool.html" class="subOption">Cross Section Tool</a>
+              <a href="CPPOpenGLDemo.html" class="subOption">C++ &amp; OpenGL Demonstration</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="videoSection">
+        <h1>C++ &amp; OpenGL Demonstration</h1>
+        <div class="videoContainer">
+          <div>
+            <iframe width="1037" height="583" src="https://www.youtube.com/embed/x_oxMVCA2uE" title="C++ & OpenGL Project" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+      <section class="semiOpaqueBG">
+        <p>
+          During the first lockdown of 2020, I explored programming in C++ and OpenGL and I started this individual project to practice on these areas.
+        </p>
+        <p>This project utilised the Programmable Render Pipeline of OpenGL which involves the features:</p>
+        <ul>
+          <li>Vertex Colouring &amp; Texturing</li>
+          <li>Overlaying &amp; Interactive Graphics</li>
+          <li>Perspective &amp; Orthographic Projections</li>
+          <li>Translation, Rotation, Scale Transformations</li>
+          <li>Transformations &amp; Vertex Based Animations</li>
+          <li>Object Instancing</li>
+          <li>
+            Lighting Effects
+            <ul>
+              <li>Directional</li>
+              <li>Point-Based</li>
+              <li>Colouring</li>
+              <li>Vertex Emissions</li>
+            </ul>
+          </li>
+          <li>Window Scalability</li>
+        </ul>
+        <p>
+          Two shaders were created for this project. The first being the Vertex shader, which describes the characteristics of the vertices in respect to position, projection, colour, lighting, normal and so on. The other is the Fragment shader which considers how each pixel is rendered by using information from the Vertex shader and textures.
+        </p>
+        <p>C++ was involved to house and manage the OpenGL code of the application and object orientated approaches of Abstraction and Reuse ware applied.</p>
+        <p>An example of this concept is the ‘Buffers’ class, which manages the ID, data and the shader variable to send the data to, for each of the required buffers to render a visual object.</p>
+        <p>As many procedures in OpenGL are particular and repetitive, ensuring complexity was concealed and allowing versatile use was adopted to aid the involvement of more advanced implementations and outcomes. </p>
+      </section>
+    </main>
+    <footer class="semiOpaqueBG">
+      <h2>Contact</h2>
+      <div>
+        <a href="mailto:pierre.mcdougall@outlook.com?Subject=Pierre_McDougall_CODE%20Contact" class="linkButton">Email</a>
+        <a href="https://www.linkedin.com/in/pierre-mcdougall/" target="_blank" class="linkButton">LinkedIn</a>
+      </div>
+      <p class="copyright">Pierre McDougall © 2020</p>
+    </footer>
+  </body>
+</html>
