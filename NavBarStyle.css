@@ -2,7 +2,7 @@ nav {
   margin: 0 2%;
   padding: 0 5%;
   position: fixed;
-  top: 2%;
+  top: 1%;
   width: 86%;
   z-index: 5;
   background: rgba(28, 28, 28, 0.9); /* Same as #1c1c1c */
@@ -13,6 +13,10 @@ nav:hover {
   background: #1c1c1c;
   border: 2px solid white;
 }
+nav:not(hover){
+  background: rgba(28, 28, 28, 0.9);
+  border: 2px solid transparent;
+}
 nav div {
   overflow:hidden;
 }
@@ -22,7 +26,7 @@ nav a {
   text-decoration: none;
   font-weight: bold;
   font-size: 1.5rem;
-  padding: 32px 24px;
+  padding: 20px 24px;
   transition: background 0.25s, color 0.25s;
 }
 nav a:hover {
@@ -32,14 +36,12 @@ nav a:hover {
 nav a.selected { 
   color: #f0f0f0 !important;
 }
-
 nav .hamburgerIcon {
-  padding: 28px;
+  padding: 20px;
   text-align: right;
   display: none;
   float: right;
 }
-
 nav .dropdownHolder {
   float: left;
 }
@@ -50,7 +52,7 @@ nav .dropdownHolder .dropdownOption {
   text-decoration: none;
   font-weight: bold;
   font-size: 1.5rem;
-  padding: 32px 24px;
+  padding: 20px 24px;
   margin: 0;
   transition: background 0.25s, color 0.25s;
 }
@@ -137,10 +139,12 @@ nav .dropdownHolder .subOption:hover {
     display: none;
     position: relative;
     margin-left: 20px;
+    width: auto;
   }
   nav .hamburgerDropdownEnabled .dropdownHolder:hover .subOptionHolder {
     display: block;
-    border: 2px solid transparent;
+    border: 2px solid #101010;
+    border-top: none;
   }
   nav .hamburgerDropdownEnabled .dropdownHolder .subOption:hover {
     background-color: #101010;
